@@ -1,0 +1,24 @@
+START
+
+DISPLAY list of available books
+
+PROMPT patron to select a book to borrow
+READ selected_book
+
+IF selected_book is in available_books THEN
+    GET patron's current borrowed_books_count
+
+    IF borrowed_books_count < borrowing_limit THEN
+        CONFIRM successful borrowing
+        REMOVE selected_book from available_books
+        ADD selected_book to patron's borrowing record
+        LOG borrowing transaction
+    ELSE
+        INFORM patron: "Borrowing limit reached"
+    ENDIF
+
+ELSE
+    INFORM patron: "Book not available"
+ENDIF
+
+END
