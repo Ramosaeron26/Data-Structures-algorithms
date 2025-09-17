@@ -1,0 +1,24 @@
+1. Last node where the information should be 54 with an address of 1115 link to the second node that has an information of 68 and an address of 1114 should be link to the first information of 32 as a first node and has an address of 1113 should be link all together and must be accessed with a head or start and linked to the first node.
+Head
+ ↓
+[32 | 1113] → [68 | 1114] → [54 | 1115]
+       ↑                             |
+       |_____________________________|
+
+2. Create a Head Node accessing the first node that is linked to second node and third node, include Tail Node.
+
+Head → [First Node] → [Second Node] → [Third Node] → Tail
+
+3. First address 2020, second address 2021, third address 2022, fourth address 2023 and fifth address 2024 must all linked together and can perform a go back feature and forward feature. Add the following values to their respective positions, 55 for 5th Node , 48 3rd Node, 24 1st Node, 32 2nd Node , and lastly 21 4th Node. Last node should go back to second Node.
+Head
+ ↓
+[24 | 2020] ⇄ [32 | 2021] ⇄ [48 | 2022] ⇄ [21 | 2023] ⇄ [55 | 2024] ← Tail
+                                           ↑
+                                           └───────────────┘
+                              (Back to 2nd Node)
+
+Q1 → Circular Singly Linked List
+
+Q2 → Singly Linked List (with head & tail)
+
+Q3 → Doubly Linked List (tail links back to 2nd node)
